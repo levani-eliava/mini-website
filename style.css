@@ -1,0 +1,714 @@
+* {
+       box-sizing: border-box;
+   }
+   
+   body {
+       margin: 0;
+       padding: 0;
+       
+   }
+
+.slide{
+    animation-name:slide;
+    animation-duration: 1.5s;
+    
+}
+@keyframes slide{
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+ i{
+       margin-left: 500px;
+   }
+   html {
+    scroll-behavior: smooth;
+  }
+  
+   .navbar {
+       display: flex;
+       position: fixed;
+       width: 100%;
+       top: 0;
+       left: 0;
+       justify-content: space-between;
+       align-items: center;
+       background-color: rgba(202, 185, 185, 0.979);
+       color: rgb(0, 0, 0);
+       z-index: 10;
+       }
+
+  
+   
+   .brand-title {
+       font-size: 18px;
+       padding: 1rem;
+       opacity: 0;
+       
+   }
+   img{
+       width: 108px;
+       position: absolute;
+       top: 2px;
+       left: 2px;
+   }
+   .navbar-links {
+       height: 100%;
+   }
+   
+   .navbar-links ul {
+       display: flex;
+       
+       margin: 0;
+       padding: 0;
+   }
+   
+   .navbar-links li {
+       list-style: none;
+   }
+   
+   .navbar-links li a {
+       display: block;
+       text-decoration: none;
+       color: rgb(0, 0, 0);
+       padding: 1rem;
+       margin: 10px;
+       font-size: 17px;
+       border-radius: 5px;
+       font-weight:400;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+ #active .aa{
+          background-color: white;
+   }
+
+   
+   .navbar-links li a:hover {
+       background-color: rgb(255, 255, 255);
+       
+       
+   }
+   
+   .toggle-button {
+       position: absolute;
+       top: 500px;
+       right: 1rem;
+       display: none;
+       flex-direction: column;
+       justify-content: space-between;
+       width: 30px;
+       height: 21px;
+   }
+   
+   .toggle-button .bar {
+       height: 3px;
+       width: 100%;
+       background-color: rgb(0, 0, 0);
+       border-radius: 10px;
+   }
+
+ /*div box*/
+ .bigbox {
+        width: auto;
+        height: 550px;
+        margin-top: 0;
+        background-image: url(./image/orig.gif);
+        background-size: 1400px 580px;
+ } 
+
+ 
+
+/*section style*/
+.allsection{
+    height: 550px;
+    border: 1px solid ;
+    margin-top: 5px;
+}
+
+.section2{
+    height: 500px;
+    border: 1px solid ;
+    margin-top: 5px;
+}
+
+.section2 h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.section3{
+    height: 250px;
+    border: 1px solid;
+    margin-top: 8px;
+    background-color: rgb(216, 173, 173);
+}
+.section3 h3{
+    text-align: center;
+    color: rgb(52, 56, 52);;
+    font-weight: bold;
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.section3 h4{
+    position: absolute;
+    top: 1750px;
+    left: 618px;
+}
+
+
+.section3 h5{
+    position: absolute;
+    top: 1785px;
+    left: 565px;
+    font-size: 15px;
+}
+
+.section3 .link1{
+    width: 120px;
+    height: 60;
+    border: 2px solid gray;
+    position: absolute;
+    top: 1000;
+    left: 688px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(0, 60, 255);
+    border-radius:5px ;
+}
+
+.section3 .link1 a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.section3 .link2{
+    width: 120px;
+    height: 60;
+    border: 2px solid gray;
+    position: absolute;
+    top: 1000;
+    left: 537px;
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.section3 .link2 a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+
+.allsection h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 73px;
+}
+
+.allsection h1{
+    text-align: left;
+    font-size: 17px;
+    margin-top: 45px;
+    font-weight: 100;
+    padding: 4px;
+    color: rgb(52, 56, 52);
+    font-weight: 500;
+}
+
+.parent .child1{
+    position: absolute;
+    top: 850px;
+    right: 2px;
+    border: 2px dashed rgb(167, 161, 161);
+    width: 300px;
+    height: 250px;
+}
+
+.parent .child2{
+    position: absolute;
+    top: 850px;
+    right: 535px;
+    border: 2px dashed rgb(167, 161, 161);
+    width: 300px;
+    height: 250px;
+}
+
+.parent .child3{
+    position: absolute;
+    top:850px;
+    left: 2px;
+    border: 2px dashed rgb(167, 161, 161);
+    width: 300px;
+    height: 250px;
+}
+
+.parent2 .child4{
+    position: absolute;
+    top: 1208px;
+    right: 200px;
+    
+    box-shadow: 1px 1px 1px 2px  rgba(66, 66, 66, 0.527);
+    background-color: rgba(170, 162, 162, 0.103);
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    
+}
+
+.parent2 .child5{
+    position: absolute;
+    top: 1208px;
+    right: 535px;
+    box-shadow: 1px 1px 1px 2px  rgba(66, 66, 66, 0.527);
+    background-color: rgba(170, 162, 162, 0.103);
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+}
+
+.parent2 .child6{
+    position: absolute;
+    top: 1208px;
+    left: 180px;
+    box-shadow: 1px 1px 1px 2px  rgba(66, 66, 66, 0.527);
+    background-color: rgba(170, 162, 162, 0.103);
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+}
+
+.parent h2{
+    text-align: center;
+}
+
+.parent2 h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.parent h4{
+    font-size: 15px;
+    margin-left: 7px;
+    font-weight: 400;
+    color: rgb(52, 56, 52);
+}
+
+.parent2 h3{
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    margin-top: 80px;
+}
+
+.parent2 h4{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 50px;
+    color: rgb(52, 56, 52);
+}
+/*icon style*/
+.icon1{
+    width: 50px;
+    height: 52px;
+    
+    border-radius: 25px;
+    position: absolute;
+    top:10px;
+    left: 52px;
+    background-image:url(./image/icon1.png);
+    background-size: cover;
+    
+}
+
+.icon2{
+    width: 50px;
+    height: 52px;
+    
+    border-radius: 25px;
+    position: absolute;
+    top:10px;
+    left: 30px;
+    background-image:url(./image/icon1.png);
+    background-size: cover;
+    
+}
+
+.icon3{
+    width: 50px;
+    height: 51px;
+    
+    border-radius: 25px;
+    position: absolute;
+    top:10px;
+    left: 49px;
+    background-image:url(./image/icon1.png);
+    background-size: cover;
+    
+}
+
+.icon7{
+    width: 50px;
+    height: 70px;
+    
+    
+    position: absolute;
+    top:15px;
+    left: 16px;
+    background-image:url(./image/icon2.png);
+    background-size: cover;
+    
+}
+
+.icon5{
+    width: 50px;
+    height: 70px;
+    
+    
+    position: absolute;
+    top:15px;
+    left: 8px;
+    background-image:url(./image/icon2.png);
+    background-size: cover;
+    
+}
+
+
+.icon6{
+    width: 50px;
+    height: 70px;
+    
+    
+    position: absolute;
+    top:15px;
+    left: 12px;
+    background-image:url(./image/icon2.png);
+    background-size: cover;
+    
+}
+
+/*link section*/
+.parent2 a{
+    text-decoration: none;
+    width: 300px;
+    height: 40px;
+    border: 1px solid;
+    margin-left: 30%;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: rgb(0, 255, 0);
+    color: white;
+}
+
+.parent2 a:hover{
+    background-color: rgb(255, 6, 213);
+    transition: 0.5s;
+ 
+}
+
+
+
+/*Mobile Responsive*/
+
+   @media (max-width: 600px) {
+       .navbar {
+           flex-direction: column;
+           align-items: flex-start;
+          
+       }
+   
+       .toggle-button {
+           display: flex;
+       }
+   
+       .navbar-links {
+           display: none;
+           width: 100%;
+       }
+   
+       .navbar-links ul {
+           width: 100%;
+           flex-direction: column;
+           
+       }
+   
+       .navbar-links ul li {
+           text-align: center;
+       }
+   
+       .navbar-links ul li a {
+           padding: .5rem 1rem;
+       }
+   
+       .navbar-links.active {
+           display: flex;
+       }
+
+       .navbar-links li a {
+              display: block;
+              text-decoration: none;
+              color: rgb(0, 0, 0);
+              padding: 1rem;
+              margin-left: -74%;
+          }
+
+          .navbar-links li a:hover {
+              background-color: rgba(219, 209, 209, 0.863);
+            
+              
+          }
+
+          .brand-title {
+            font-size: 18px;
+            padding: 1rem;
+            opacity: 1;
+            
+        }
+
+        img{
+            width: 108px;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            display: none;
+        }
+          
+        .bigbox {
+            width: auto;
+            height: 550px;
+            margin-top: 0;
+            background-image: url(./image/orig.gif);
+            background-size: 600px 580px;
+     }
+     
+     .allsection{
+        height: 1300px;
+        border: 1px solid ;
+        margin-top: 5px;
+    }
+
+    .allsection h3{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 30px;
+    }
+    
+    .allsection h1{
+        text-align: left;
+        font-size: 17px;
+        margin-top: 45px;
+        font-weight: 100;
+        padding: 4px;
+        color: rgb(52, 56, 52);
+        font-weight: 500;
+    }
+
+    .parent h2{
+        text-align: center;
+    }
+    
+    .parent2 h2{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .parent h4{
+        font-size: 15px;
+        margin-left: -2px;
+        font-weight: 400;
+        color: rgb(52, 56, 52);
+        padding: 8px;
+    }
+
+    .parent .child1{
+        position: absolute;
+        top: 1545px;
+        left: -2px;
+        border: 2px dashed rgb(167, 161, 161);
+        width: 600px;
+        height: 300px;
+    }
+    
+    .parent .child2{
+        position: absolute;
+        top: 1235px;
+        left: -2px;
+        border: 2px dashed rgb(167, 161, 161);
+        width: 600px;
+        height: 300px;
+    }
+    
+    .parent .child3{
+        position: absolute;
+        top:930px;
+        left: -2px;
+        border: 2px dashed rgb(167, 161, 161);
+        width: 600px;
+        height: 300px;
+    }
+
+
+
+
+
+
+
+     .section2{
+        height: 1080px;
+        border: 1px solid ;
+        margin-top: 30px;
+    }
+    
+    .section2 h3{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .parent2 .child6{
+        position: absolute;
+        top: 1990px;
+        left: -2px;
+       
+        box-shadow: 1px 1px 1px 2px  rgba(66, 66, 66, 0.527);
+        background-color: rgba(170, 162, 162, 0.103);
+        border-radius: 10px;
+        width: 595px;
+        height: 300px;
+        
+    }
+    .parent2 .child5{
+        position: absolute;
+        top: 2320px;
+        left: -2px;
+       
+        box-shadow: 1px 1px 1px 2px  rgba(66, 66, 66, 0.527);
+        background-color: rgba(170, 162, 162, 0.103);
+        border-radius: 10px;
+        width: 595px;
+        height: 300px;
+        
+    }
+
+    .parent2 .child4{
+        position: absolute;
+        top: 2650px;
+        left: -2px;
+       
+        box-shadow: 1px 1px 1px 2px  rgba(66, 66, 66, 0.527);
+        background-color: rgba(170, 162, 162, 0.103);
+        border-radius: 10px;
+        width: 595px;
+        height: 300px;
+        
+    }
+    .parent2 a{
+        text-decoration: none;
+        width: 300px;
+        height: 40px;
+        border: 1px solid;
+        margin-left: 40%;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 25px;
+        background-color: rgb(0, 255, 0);
+        color: white;
+    }
+    
+
+     
+.section3{
+    height: 300px;
+    border: 1px solid;
+    margin-top: 25px;
+    background-color: rgb(216, 173, 173);
+    
+}
+.section3 .link1{
+    width: 120px;
+    height: 60;
+    border: 2px solid gray;
+    position: absolute;
+    top: 1000;
+    left: 230px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(0, 60, 255);
+    border-radius:5px ;
+}
+
+.section3 .link1 a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.section3 .link2{
+    width: 120px;
+    height: 60;
+    border: 2px solid gray;
+    position: absolute;
+    top: 3125px;
+    left: 230px;
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.section3 .link2 a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.section3 h4{
+    position: absolute;
+    top: 3180px;
+    left: 230px;
+}
+
+
+.section3 h5{
+    position: absolute;
+    top: 3230px;
+    left: 170px;
+    font-size: 15px;
+}
+    
+   }
+   
+   
+
+         
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
